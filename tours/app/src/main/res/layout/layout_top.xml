@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="50dp"
+    android:padding="8dp"
+    android:layout_marginBottom="1dp" >
+
+
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/ListthumbImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitXY"
+            android:background="@drawable/no_image" />
+        <TextView
+            android:id="@+id/top_views"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ListthumbImage"
+            android:minLines="1"
+            android:paddingTop="0dp"
+            android:text="TOP RATING"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/topviews_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ListthumbImage"
+            android:layout_below="@id/top_views"
+            android:minLines="1"
+            android:paddingTop="0dp"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/topviews_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topviews_title"
+            android:layout_marginTop="1dp"
+            android:layout_marginStart="10dp"
+            android:tag="no"
+            android:layout_toRightOf="@id/ListthumbImage" />
+
+
+    </RelativeLayout>
+

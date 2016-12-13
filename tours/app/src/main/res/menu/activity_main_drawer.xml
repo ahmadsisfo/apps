@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_home"
+            android:title="@string/dashboard" />
+        <item
+            android:id="@+id/nav_forme"
+            android:icon="@drawable/ic_lightbulb_outline"
+            android:title="@string/my_favorites" />
+        <item
+            android:id="@+id/nav_street"
+            android:icon="@drawable/ic_language"
+            android:title="@string/street_view" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_motorcycle"
+            android:title="My Activity" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_search"
+            android:title="Search" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_settings"
+                android:title="Setting"
+
+                />
+            <item
+                android:id="@+id/nav_helpes"
+                android:icon="@drawable/ic_live_help"
+                android:title="Help" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_action_google_play"
+                android:title="About" />
+
+        </menu>
+    </item>
+
+</menu>

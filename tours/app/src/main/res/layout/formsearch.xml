@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbarStyle="outsideOverlay">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <com.rey.material.widget.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            app:v_styleId="@array/text_title"
+            android:text="Kata Kunci"/>
+
+        <EditText
+            android:id="@+id/edittext_katakunci"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_margin="20dp"
+            />
+
+        <com.rey.material.widget.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            app:v_styleId="@array/text_title"
+            android:text="Kategori"/>
+
+        <com.rey.material.widget.Spinner
+            android:id="@+id/spinner_kategori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="128dp"
+            android:padding="8dp"
+            android:gravity="center"
+            app:spn_label="Spinner with arrow"
+            app:v_styleId="@array/spinner"/>
+
+
+
+        <com.rey.material.widget.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            app:v_styleId="@array/text_title"
+            android:text="Rating Minimal"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:rating="0" />
+
+        <com.rey.material.widget.TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            app:v_styleId="@array/text_title"
+            android:text="Radius"/>
+
+        <com.rey.material.widget.Slider
+            android:id="@+id/slider_radius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            app:sl_value="0"
+            app:sl_maxValue="20"
+            app:v_styleId="@array/slider_discrete"/>
+
+        <com.rey.material.widget.TextView
+            android:id="@+id/slider_tv_discrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:v_styleId="@array/text_body"
+            android:gravity="center"/>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

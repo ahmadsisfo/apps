@@ -1,0 +1,80 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Server"
+        android:key="category_server">
+
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue="http://gisfaisal.in/tours/"
+            android:inputType="textCapWords"
+            android:key="server_url"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Server URL" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="kategori 1"
+        android:key="pref_key_storage_settings">
+
+        <EditTextPreference
+            android:capitalize="words"
+            android:defaultValue=""
+            android:inputType="textCapWords"
+            android:key="displayName"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="@string/pref_title_display_name" />
+        <!--<CheckBoxPreference
+            android:key="pref_key_auto_delete"
+            android:summary="Apakah ingin mendelete ini"
+            android:title="ya"
+            android:defaultValue="false" />
+        <Preference
+            android:key="pref_key_sms_delete_limit"
+            android:dependency="pref_key_auto_delete"
+            android:summary="Preference kedua"
+            android:title="title nya 1" />
+        <Preference
+            android:key="pref_key_mms_delete_limit"
+            android:dependency="pref_key_auto_delete"
+            android:summary="prefrelhi"
+            android:title="title nya 2" />
+        -->
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="notif_switch"
+            android:summary="Enable Notification For Nearby Place With You"
+            android:title="Notification" />
+
+        <!--<SwitchPreference
+            android:defaultValue="true"
+            android:key="nearby_switch"
+            android:summary="@string/pref_description_nearby_recommendations"
+            android:title="@string/pref_title_nearby_recommendations" />-->
+
+        <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+
+    </PreferenceCategory>
+
+
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+
+
+    <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
+         dismiss it. -->
+    <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/pref_example_list_titles"
+        android:entryValues="@array/pref_example_list_values"
+        android:key="tracking_mode"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_title_add_friends_to_messages" />
+
+</PreferenceScreen>
